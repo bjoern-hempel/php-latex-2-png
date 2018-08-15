@@ -85,6 +85,11 @@ LATEX_DOCUMENT;
         /* create filenames */
         $pngFile = sprintf($this->templatePngFile, $this->cacheFolder, $this->documentHash);
 
+        /* do not render the png multiple times; use the cache */
+        if (file_exists($pngFile)) {
+            return file_get_contents($pngFile);
+        }
+
         /* get the latex document */
         $latexDocument = $this->getLatexDocument();
 
