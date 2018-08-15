@@ -1,4 +1,4 @@
-# php-latex-2-png
+# A Latex2Png library
 
 TODO..
 
