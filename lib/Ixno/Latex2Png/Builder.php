@@ -82,6 +82,11 @@ LATEX_DOCUMENT;
 
     public function createPNG()
     {
+        /* Create the cache directory if it does not exist */
+        if (!file_exists($this->cacheFolder)) {
+            mkdir($this->cacheFolder, 0775, true);
+        }
+
         /* create filenames */
         $pngFile = sprintf($this->templatePngFile, $this->cacheFolder, $this->documentHash);
 
