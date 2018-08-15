@@ -33,5 +33,5 @@ $cacheFolder = dirname(__FILE__).'/../cache';
 
 $builder = new Builder($cacheFolder, '\sum_{i = 0}^{i = n} \frac{i}{2}');
 
-$builder->sendPNGToBrowser();
+$builder->sendPNGToBrowser(600);
 

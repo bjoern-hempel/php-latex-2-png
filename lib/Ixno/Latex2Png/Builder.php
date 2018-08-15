@@ -56,7 +56,7 @@ LATEX_DOCUMENT;
 
     protected $templateTexCommand = 'latex -output-directory "%s" "%s" 1>/dev/null';
 
-    protected $templateDviCommand = 'dvipng -q -T tight -D 300 -o %s %s 1>/dev/null 2>&1';
+    protected $templateDviCommand = 'dvipng -q -T tight -D %d -o %s %s 1>/dev/null 2>&1';
 
     protected $documentHash = null;
 
@@ -72,7 +72,6 @@ LATEX_DOCUMENT;
     {
         $this->cacheFolder = $cacheFolder;
         $this->latex = $latex;
-        $this->documentHash = md5($latex);
     }
 
     public function getLatexDocument()
@@ -80,8 +79,10 @@ LATEX_DOCUMENT;
         return sprintf($this->latexDocument, $this->latex);
     }
 
-    public function createPNG()
+    public function createPNG($outputResolution = 155)
     {
+        $this->documentHash = md5(sprintf('%d:%s', $outputResolution, $this->latex));
+
         /* Create the cache directory if it does not exist */
         if (!file_exists($this->cacheFolder)) {
             mkdir($this->cacheFolder, 0775, true);
@@ -110,7 +111,7 @@ LATEX_DOCUMENT;
         exec(sprintf($this->templateTexCommand, $this->cacheFolder, $texFile));
 
         /* execute dvi command (create png file) */
-        exec(sprintf($this->templateDviCommand, $pngFile, $dviFile));
+        exec(sprintf($this->templateDviCommand, $outputResolution, $pngFile, $dviFile));
 
         /* tidy up the used files */
         unlink($texFile);
@@ -121,9 +122,9 @@ LATEX_DOCUMENT;
         return file_get_contents($pngFile);
     }
 
-    public function sendPNGToBrowser()
+    public function sendPNGToBrowser($outputResolution = 155)
     {
-        $png = $this->createPNG();
+        $png = $this->createPNG($outputResolution);
 
         header('Content-type: image/png');
         header('Expires: 0');
