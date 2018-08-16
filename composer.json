@@ -11,7 +11,7 @@
     "autoload": {
         "psr-0": {
             "": "src/",
-            "Ixno\\Latex2Png\\":"lib/Ixno/"
+            "Ixno\\Latex2Png\\":"lib/Ixno/Latex2Png/"
         }
     }
 }
