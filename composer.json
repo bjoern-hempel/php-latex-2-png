@@ -1,0 +1,16 @@
+{
+    "name": "ixno/php-latex-2-png",
+    "type": "library",
+    "description": "",
+    "authors": [
+        {
+            "name": "Björn Hempel",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Ixno\\Latex2Png\\":"lib/Ixno/"
+        }
+    }
+}
