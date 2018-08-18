@@ -22,7 +22,35 @@ user$ vi composer.json
 ```
 
 ```
-user$ composer.phar install
+user$ composer install
+user$ composer dumpautoload -o
+```
+
+## Usage
+
+```
+<?php
+
+include "vendor/autoload.php";
+
+use Ixno\Latex2Png\Builder;
+
+/* Some configs */
+$cacheFolder = dirname(__FILE__).'/cache';
+$resolution  = 600;
+$formula     = '\sum_{i = 0}^{n} i = \frac{n(n + 1)}{2}';
+
+if (array_key_exists('f', $_REQUEST)) {
+    $formula = $_REQUEST['f'];
+}
+
+if (array_key_exists('r', $_REQUEST)) {
+    $resolution = $_REQUEST['r'];
+}
+
+$builder = new Builder($cacheFolder, $formula);
+
+$builder->sendPNGToBrowser($resolution);
 ```
 
 ## Examples
