@@ -68,6 +68,14 @@ $builder->sendPNGToBrowser($resolution);
 
 ## Examples
 
+### Basic
+
+```latex
+E = mc^{2}
+```
+
+<img src="https://latex.ixno.de/?r=300&f=E%20=%20mc^{2}" width="92" alt="E = mc^{2}">
+
 ### Summation
 
 ```latex
