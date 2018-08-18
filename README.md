@@ -27,6 +27,12 @@ user$ composer.phar install
 
 ## Examples
 
+### Summation
+
+```
+\sum_{i = 0}^{n} i^2
+```
+
 ![\sum_{i = 0}^{n} i^2](https://latex.ixno.de/?r=150&f=\sum_{i%20=%200}^{n}%20i^2)
 
 
