@@ -37,6 +37,7 @@ use Ixno\Latex2Png\Builder;
 
 /* Some configs */
 $cacheFolder = dirname(__FILE__).'/cache';
+$useCache    = false;
 $resolution  = 600;
 $formula     = '\sum_{i = 0}^{n} i = \frac{n(n + 1)}{2}';
 
@@ -48,7 +49,7 @@ if (array_key_exists('r', $_REQUEST)) {
     $resolution = $_REQUEST['r'];
 }
 
-$builder = new Builder($cacheFolder, $formula);
+$builder = new Builder($cacheFolder, $formula, $useCache);
 
 $builder->sendPNGToBrowser($resolution);
 ```
