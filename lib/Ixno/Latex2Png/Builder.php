@@ -30,7 +30,8 @@ class Builder
     protected $latex = '';
 
     protected $latexDocument = <<<LATEX_DOCUMENT
-\\documentclass[12pt]{article}
+\\documentclass[border={%s %s %s %s}]{standalone}
+
 \\nofiles
 \\usepackage[utf8]{inputenc}
 \\usepackage{amssymb,amsmath}
@@ -38,29 +39,34 @@ class Builder
 \\usepackage{amsfonts}
 \\usepackage{amssymb}
 \\usepackage{pst-plot}
+
 \\begin{document}
 \\pagestyle{empty}
-\\begin{displaymath}
+
+$\\displaystyle
 %s
-\\end{displaymath}
+$
+
 \\end{document}
 LATEX_DOCUMENT;
 
     protected $templateTexFile = '%s/%s.tex';
 
-    protected $templateDviFile = '%s/%s.dvi';
+    protected $templatePdfFile = '%s/%s.pdf';
 
     protected $templatePngFile = '%s/%s.png';
 
     protected $templateLogFile = '%s/%s.log';
 
-    protected $templateTexCommand = 'latex -output-directory "%s" "%s" 1>/dev/null';
+    protected $templatePdfCommand = 'pdflatex -output-directory "%s" "%s" 1>/dev/null 2>&1';
 
-    protected $templateDviCommand = 'dvipng -q -T tight -D %d -o %s %s 1>/dev/null 2>&1';
+    protected $templateConvertCommand = 'convert -density %d %s -quality 100 %s 1>/dev/null 2>&1';
 
     protected $documentHash = null;
 
     protected $cacheFolder = null;
+
+    protected $useCache = true;
 
     /**
      * The constructor of this builder class.
@@ -68,20 +74,28 @@ LATEX_DOCUMENT;
      * @author  Bjoern Hempel <bjoern@hempel.li>
      * @version 1.0 (2018-08-14)
      */
-    public function __construct($cacheFolder, $latex)
+    public function __construct($cacheFolder, $latex, $useCache = true)
     {
         $this->cacheFolder = $cacheFolder;
         $this->latex = $latex;
+        $this->useCache = $useCache;
     }
 
-    public function getLatexDocument()
+    public function getLatexDocument($padding = '1pt')
     {
-        return sprintf($this->latexDocument, $this->latex);
+        return sprintf(
+            $this->latexDocument,
+            $padding,
+            $padding,
+            $padding,
+            $padding,
+            $this->latex
+        );
     }
 
-    public function createPNG($outputResolution = 155)
+    public function createPNG($outputResolution = 155, $padding = '1pt')
     {
-        $this->documentHash = md5(sprintf('%d:%s', $outputResolution, $this->latex));
+        $this->documentHash = md5(sprintf('%d:%s:%s', $outputResolution, $padding, $this->latex));
 
         /* Create the cache directory if it does not exist */
         if (!file_exists($this->cacheFolder)) {
@@ -92,30 +106,30 @@ LATEX_DOCUMENT;
         $pngFile = sprintf($this->templatePngFile, $this->cacheFolder, $this->documentHash);
 
         /* do not render the png multiple times; use the cache */
-        if (file_exists($pngFile)) {
+        if ($this->useCache && file_exists($pngFile)) {
             return file_get_contents($pngFile);
         }
 
         /* get the latex document */
-        $latexDocument = $this->getLatexDocument();
+        $latexDocument = $this->getLatexDocument($padding);
 
         /* create filenames */
         $texFile = sprintf($this->templateTexFile, $this->cacheFolder, $this->documentHash);
-        $dviFile = sprintf($this->templateDviFile, $this->cacheFolder, $this->documentHash);
+        $pdfFile = sprintf($this->templatePdfFile, $this->cacheFolder, $this->documentHash);
         $logFile = sprintf($this->templateLogFile, $this->cacheFolder, $this->documentHash);
 
         /* save the latex document */
         file_put_contents($texFile, $latexDocument);
 
-        /* execute tex command (create dvi file) */
-        exec(sprintf($this->templateTexCommand, $this->cacheFolder, $texFile));
+        /* execute tex command (create pdf file) */
+        exec(sprintf($this->templatePdfCommand, $this->cacheFolder, $texFile));
 
-        /* execute dvi command (create png file) */
-        exec(sprintf($this->templateDviCommand, $outputResolution, $pngFile, $dviFile));
+        /* execute convert command (create png file) */
+        exec(sprintf($this->templateConvertCommand, $outputResolution, $pdfFile, $pngFile));
 
         /* tidy up the used files */
         unlink($texFile);
-        unlink($dviFile);
+        unlink($pdfFile);
         unlink($logFile);
 
         /* return the png file */
