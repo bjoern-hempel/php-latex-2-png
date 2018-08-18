@@ -136,9 +136,9 @@ LATEX_DOCUMENT;
         return file_get_contents($pngFile);
     }
 
-    public function sendPNGToBrowser($outputResolution = 155)
+    public function sendPNGToBrowser($outputResolution = 155, $padding = '1pt')
     {
-        $png = $this->createPNG($outputResolution);
+        $png = $this->createPNG($outputResolution, $padding);
 
         header('Content-type: image/png');
         header('Expires: 0');
