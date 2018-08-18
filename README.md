@@ -34,7 +34,7 @@ user$ composer dumpautoload -o
 ### Debian / Ubuntu
 
 ```shell
-user$ sudo apt install texlive-base biblatex
+user$ sudo apt install texlive-base biblatex texlive-latex-extra texlive-fonts-recommended
 user$ sudo apt install ImageMagick
 ```
 
