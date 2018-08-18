@@ -26,6 +26,18 @@ user$ composer install
 user$ composer dumpautoload -o
 ```
 
+## Requirements
+
+* latex
+* imagemagick
+
+### Debian / Ubuntu
+
+```shell
+user$ sudo apt install texlive-base biblatex
+user$ sudo apt install ImageMagick
+```
+
 ## Usage
 
 ```php
