@@ -2,11 +2,11 @@
 
 ## Installation
 
-```
+```shell
 user$ vi composer.json
 ```
 
-```
+```json
 {
     "name": "My Project",
     "repositories": [
@@ -21,14 +21,14 @@ user$ vi composer.json
 }
 ```
 
-```
+```shell
 user$ composer install
 user$ composer dumpautoload -o
 ```
 
 ## Usage
 
-```
+```php
 <?php
 
 include "vendor/autoload.php";
@@ -57,7 +57,7 @@ $builder->sendPNGToBrowser($resolution);
 
 ### Summation
 
-```
+```latex
 \sum_{i = 0}^{n} i = \frac{n(n + 1)}{2}
 ```
 
