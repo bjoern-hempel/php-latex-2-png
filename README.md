@@ -30,10 +30,10 @@ user$ composer.phar install
 ### Summation
 
 ```
-\sum_{i = 0}^{n} i^2
+\sum_{i = 0}^{n} i = \frac{n(n + 1)}{2}
 ```
 
-![\sum_{i = 0}^{n} i^2](https://latex.ixno.de/?r=150&f=\sum_{i%20=%200}^{n}%20i^2)
+![\sum_{i = 0}^{n} i = \frac{n(n + 1)}{2}](https://latex.ixno.de/?r=150&f=\sum_{i%20=%200}^{n}%20i%20=%20\frac{n(n%20%2B%201)}{2})
 
 
 ## A. Authors
