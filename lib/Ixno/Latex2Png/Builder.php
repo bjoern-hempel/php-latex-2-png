@@ -107,7 +107,7 @@ LATEX_DOCUMENT;
 
         /* do not render the png multiple times; use the cache */
         if ($this->useCache && file_exists($pngFile)) {
-            return file_get_contents($pngFile);
+            return $pngFile;
         }
 
         /* get the latex document */
@@ -133,12 +133,14 @@ LATEX_DOCUMENT;
         unlink($logFile);
 
         /* return the png file */
-        return file_get_contents($pngFile);
+        return $pngFile;
     }
 
     public function sendPNGToBrowser($outputResolution = 155, $padding = '1pt')
     {
-        $png = $this->createPNG($outputResolution, $padding);
+        $pngPath = $this->createPNG($outputResolution, $padding);
+
+        $png = file_get_contents($pngPath);
 
         header('Content-type: image/png');
         header('Expires: 0');

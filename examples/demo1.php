@@ -29,9 +29,30 @@ include dirname(__FILE__).'/../autoload.php';
 
 use Ixno\Latex2Png\Builder;
 
-$cacheFolder = dirname(__FILE__).'/../cache';
+/* Some configs */
+$cacheFolder = dirname(__FILE__).'/cache';
+$useCache    = true;
+$resolution  = 600;
+$padding     = '1pt';
+$formula     = '\sum_{i = 0}^{n} i = \frac{n(n + 1)}{2}';
 
-$builder = new Builder($cacheFolder, '\sum_{i = 0}^{i = n} \frac{i}{2}');
+if (array_key_exists('c', $_REQUEST)) {
+    $useCache = $_REQUEST['c'] === '1' ? true : false;
+}
 
-$builder->sendPNGToBrowser(600);
+if (array_key_exists('r', $_REQUEST)) {
+    $resolution = $_REQUEST['r'];
+}
+
+if (array_key_exists('p', $_REQUEST)) {
+    $padding = $_REQUEST['p'];
+}
+
+if (array_key_exists('f', $_REQUEST)) {
+    $formula = $_REQUEST['f'];
+}
+
+$builder = new Builder($cacheFolder, $formula, $useCache);
+
+$builder->sendPNGToBrowser($resolution, $padding);
 
