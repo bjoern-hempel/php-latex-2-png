@@ -28,6 +28,8 @@ user$ composer install
 user$ composer dumpautoload -o
 ```
 
+Now use `vendor/autoload.php` to include all libraries to your project.
+
 ## 2. Requirements
 
 The project requires at least all subsequent libraries:
