@@ -170,7 +170,7 @@ user$ vi formula.tex
 ```
 
 ```latex
-\\documentclass[border={%s %s %s %s}]{standalone}
+\\documentclass[border={1pt 1pt 1pt 1pt}]{standalone} % <- the padding arround the formula
 \\nofiles
 \\usepackage[utf8]{inputenc}
 \\usepackage{amssymb,amsmath}
@@ -182,7 +182,7 @@ user$ vi formula.tex
 \\begin{document}
 \\pagestyle{empty}
 $\\displaystyle
-E = m \cdot c^2 % the formula
+E = m \cdot c^2 % <- the formula
 $
 \\end{document}
 ```
