@@ -2,7 +2,7 @@
 
 ## 1. Installation
 
-It is possible to get this repository with composer. Write a composer.json file to install this project:
+It is possible to get this repository with [composer](https://getcomposer.org/download/). Write a composer.json file to install this project:
 
 ```shell
 user$ vi composer.json
