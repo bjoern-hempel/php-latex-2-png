@@ -172,7 +172,7 @@ user$ vi formula.tex
 ```
 
 ```latex
-\documentclass[border={1pt 1pt 1pt 1pt}]{standalone} % <- the padding arround the formula
+\documentclass[border={1pt 1pt 1pt 1pt}]{standalone} % <- The padding arround the formula.
 \nofiles
 \usepackage[utf8]{inputenc}
 \usepackage{amssymb,amsmath}
