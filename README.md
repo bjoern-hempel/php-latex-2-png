@@ -1,6 +1,6 @@
 # A Latex2Png library
 
-## Installation
+## 0. Installation
 
 ```shell
 user$ vi composer.json
@@ -26,7 +26,7 @@ user$ composer install
 user$ composer dumpautoload -o
 ```
 
-## Requirements
+## 1. Requirements
 
 * latex
 * imagemagick
@@ -66,41 +66,41 @@ $builder = new Builder($cacheFolder, $formula, $useCache);
 $builder->sendPNGToBrowser($resolution);
 ```
 
-## Examples
+## 2. Examples
 
-### Basic
+### 2.1 Basic
 
-#### Latex
+#### 2.1.1 Latex
 
 ```latex
 E = mc^{2}
 ```
 
-#### Result
+#### 2.1.2 Result
 
 <img src="https://latex.ixno.de/?r=300&f=E%20=%20mc^{2}" width="92" alt="E = mc^{2}">
 
-### Summation
+### 2.2 Summation
 
-#### Latex
+#### 2.2.1 Latex
 
 ```latex
 \sum_{i = 0}^{n} i = \frac{n(n + 1)}{2}
 ```
 
-#### Result
+#### 2.2.2 Result
 
 <img src="https://latex.ixno.de/?r=300&f=\sum_{i%20=%200}^{n}%20i%20=%20\frac{n(n%20%2B%201)}{2}" width="166" alt="\sum_{i = 0}^{n} i = \frac{n(n + 1)}{2}">
 
-### Markov chain
+### 2.3 Markov chain
 
-#### Latex
+#### 2.3.1 Latex
 
 ```latex
 \substack{\textbf{max}\\ {\tiny a}}\sum_{s'}^{} T(s, a, s')[R(s, a, s') + \gamma \cdot V_k(s')]
 ```
 
-#### Result
+#### 2.3.2 Result
 
 <img src="https://latex.ixno.de/?r=300&f=%5Csubstack%7B%5Ctextbf%7Bmax%7D%5C%5C%20%7B%5Ctiny%20a%7D%7D%5Csum_%7Bs%27%7D%5E%7B%7D%20T%28s%2C%20a%2C%20s%27%29%5BR%28s%2C%20a%2C%20s%27%29%20%2B%20%5Cgamma%20%5Ccdot%20V_k%28s%27%29%5D" width="373" alt="\substack{\textbf{max}\\ {\tiny a}}\sum_{s'}^{} T(s, a, s')[R(s, a, s') + \gamma \cdot V_k(s')]">
 
