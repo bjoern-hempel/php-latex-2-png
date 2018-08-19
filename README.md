@@ -184,7 +184,7 @@ user$ vi formula.tex
 \\begin{document}
 \\pagestyle{empty}
 $\\displaystyle
-E = m \cdot c^2 % <- the formula
+E = m \cdot c^2 % <- The formula here at this point.
 $
 \\end{document}
 ```
