@@ -41,7 +41,7 @@ user$ sudo apt install ImageMagick
 ## 3. Usage
 
 ```shell
-user$ vi build.php
+user$ vi index.php
 ```
 
 ```php
@@ -79,7 +79,7 @@ $builder = new Builder($cacheFolder, $formula, $useCache);
 $builder->sendPNGToBrowser($resolution, $padding);
 ```
 
-An image can be created by requesting it in the browser:
+An image can now be created by requesting it in the browser:
 
 https://latex.ixno.de/?r=300&f=E%3Dmc^2
 
