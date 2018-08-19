@@ -49,21 +49,30 @@ use Ixno\Latex2Png\Builder;
 
 /* Some configs */
 $cacheFolder = dirname(__FILE__).'/cache';
-$useCache    = false;
+$useCache    = true;
 $resolution  = 600;
+$padding     = '1pt';
 $formula     = '\sum_{i = 0}^{n} i = \frac{n(n + 1)}{2}';
 
-if (array_key_exists('f', $_REQUEST)) {
-    $formula = $_REQUEST['f'];
+if (array_key_exists('c', $_REQUEST)) {
+    $useCache = $_REQUEST['c'] === '1' ? true : false;
 }
 
 if (array_key_exists('r', $_REQUEST)) {
     $resolution = $_REQUEST['r'];
 }
 
+if (array_key_exists('p', $_REQUEST)) {
+    $padding = $_REQUEST['p'];
+}
+
+if (array_key_exists('f', $_REQUEST)) {
+    $formula = $_REQUEST['f'];
+}
+
 $builder = new Builder($cacheFolder, $formula, $useCache);
 
-$builder->sendPNGToBrowser($resolution);
+$builder->sendPNGToBrowser($resolution, $padding);
 ```
 
 ## 4. Examples
