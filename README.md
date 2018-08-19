@@ -2,6 +2,8 @@
 
 ## 1. Installation
 
+It is possible to get this repository with composer. Write a composer.json file to install this project:
+
 ```shell
 user$ vi composer.json
 ```
