@@ -37,6 +37,8 @@ The project requires at least all subsequent libraries:
 
 ### 2.1 Debian / Ubuntu
 
+Easy to install on Debian/Ubuntu:
+
 ```shell
 user$ sudo apt install texlive-base biblatex texlive-latex-extra texlive-fonts-recommended
 user$ sudo apt install ImageMagick
