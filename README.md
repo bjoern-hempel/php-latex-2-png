@@ -81,7 +81,7 @@ $builder->sendPNGToBrowser($resolution, $padding);
 
 An image can be created by requesting it in the browser:
 
-`build.php?r=300&p=1pt&c=1&f=E%3Dmc^2`
+`build.php?r=300&f=E%3Dmc^2`
 
 ## 4. Examples
 
