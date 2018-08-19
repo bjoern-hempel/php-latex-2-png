@@ -172,21 +172,21 @@ user$ vi formula.tex
 ```
 
 ```latex
-\\documentclass[border={1pt 1pt 1pt 1pt}]{standalone} % <- the padding arround the formula
-\\nofiles
-\\usepackage[utf8]{inputenc}
-\\usepackage{amssymb,amsmath}
-\\usepackage{color}
-\\usepackage{amsfonts}
-\\usepackage{amssymb}
-\\usepackage{pst-plot}
-\\usepackage{physics}
-\\begin{document}
-\\pagestyle{empty}
-$\\displaystyle
+\documentclass[border={1pt 1pt 1pt 1pt}]{standalone} % <- the padding arround the formula
+\nofiles
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb,amsmath}
+\usepackage{color}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{pst-plot}
+\usepackage{physics}
+\begin{document}
+\pagestyle{empty}
+$\displaystyle
 E = m \cdot c^2 % <- The formula here at this point.
 $
-\\end{document}
+\end{document}
 ```
 
 Create a pdf document `latex.pdf`:
