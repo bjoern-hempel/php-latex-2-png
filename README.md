@@ -115,6 +115,7 @@ V^*(s) = \substack{\textbf{max}\\ {\tiny a}}\sum_{s'}^{} T(s, a, s')[R(s, a, s')
 
 ## Tools
 
+* [Image-Template-Builder](https://latex.ixno.de/build.php)
 * [Online-Formula-Editor](http://www.hostmath.com/) 
 
 ## A. Authors
