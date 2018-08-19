@@ -163,3 +163,7 @@ V^*(s) = \substack{\textbf{max}\\ {\tiny a}}\sum_{s'}^{} T(s, a, s')[R(s, a, s')
 ## B. Licence
 
 This tutorial is licensed under the MIT License - see the [LICENSE.md](/LICENSE.md) file for details
+
+## C. Closing words
+
+Have fun! :)
