@@ -118,7 +118,11 @@ V^*(s) = \substack{\textbf{max}\\ {\tiny a}}\sum_{s'}^{} T(s, a, s')[R(s, a, s')
 #### 4.4.1 Latex
 
 ```latex
-\mathrm{i} \hbar \frac{\partial}{\partial t} \ket{\psi(t, \textbf{x})} = \hat{\mathcal{H}}(\hat{\textbf{x}}, \hat{\textbf{p}}) \ket{\psi(t, \textbf{x})} \hspace{1cm} \Bigg\vert \hspace{0.5cm} \hbar = \frac{h}{2\pi} \hspace{0.5cm} and \hspace{0.5cm} \hat{\mathcal{H}}(\hat{\textbf{x}}, \hat{\textbf{p}}) = -\frac{\hat{\textbf{p}}^2}{2m} + V(\hat{\textbf{x}})
+\mathrm{i} \hbar \frac{\partial}{\partial t} \ket{\psi(t, \textbf{x})} =
+\hat{\mathcal{H}}(\hat{\textbf{x}}, \hat{\textbf{p}}) \ket{\psi(t, \textbf{x})} \hspace{1cm}
+\Bigg\vert \hspace{0.5cm} \hbar = \frac{h}{2\pi} \hspace{0.5cm} and
+\hspace{0.5cm} \hat{\mathcal{H}}(\hat{\textbf{x}}, \hat{\textbf{p}}) =
+-\frac{\hat{\textbf{p}}^2}{2m} + V(\hat{\textbf{x}})
 ```
 
 #### 4.4.2 Result
