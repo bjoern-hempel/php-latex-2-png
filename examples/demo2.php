@@ -30,7 +30,7 @@ use Ixno\Latex2Png\Builder;
 /* Some configs */
 $cacheFolder = dirname(__FILE__).'/cache';
 $useCache    = true;
-$resolution  = 600;
+$resolution  = 300;
 $padding     = '1pt';
 $formula     = '\sum_{i = 0}^{n} i = \frac{n(n + 1)}{2}';
 
