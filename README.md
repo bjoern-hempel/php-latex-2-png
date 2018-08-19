@@ -195,7 +195,7 @@ $
 \end{document}
 ```
 
-Create a pdf document `latex.pdf`:
+Create a pdf document `latex.pdf` (intermediate step):
 
 ```shell
 user$ pdflatex latex.tex
