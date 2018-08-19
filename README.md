@@ -169,7 +169,37 @@ If you don't like PHP and want to build your own framework:
 user$ vi formula.tex
 ```
 
+```latex
+\\documentclass[border={%s %s %s %s}]{standalone}
+\\nofiles
+\\usepackage[utf8]{inputenc}
+\\usepackage{amssymb,amsmath}
+\\usepackage{color}
+\\usepackage{amsfonts}
+\\usepackage{amssymb}
+\\usepackage{pst-plot}
+\\usepackage{physics}
+\\begin{document}
+\\pagestyle{empty}
+$\\displaystyle
+E = m \cdot c^2 % the formula
+$
+\\end{document}
+```
 
+Create a pdf document `latex.pdf`:
+
+```shell
+user$ pdflatex latex.tex
+```
+
+Create the png image `latex.png`:
+
+```shell
+user$ convert -density 300 latex.pdf -quality 100 latex.png
+```
+
+Now enjoy your png file `latex.png`.
 
 ## 6. Tools
 
