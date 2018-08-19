@@ -171,7 +171,7 @@ V^*(s) = \substack{\textbf{max}\\ {\tiny a}}\sum_{s'}^{} T(s, a, s')[R(s, a, s')
 
 ## 5. The way it works (the technique)
 
-If you don't like PHP and you want to build your own framework or you are just interested in how it works, you will find the following command line commands for creating images from tex files:
+If you don't like PHP and you want to build your own framework or you are just interested in how it works, you will find the following command line commands for creating images from tex files. This is the background of this library:
 
 ```shell
 user$ vi formula.tex
