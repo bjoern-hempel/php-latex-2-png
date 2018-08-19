@@ -201,7 +201,7 @@ Create a pdf document `latex.pdf` (intermediate step):
 user$ pdflatex latex.tex
 ```
 
-Create the png image `latex.png`:
+Create the png image `latex.png` from `latex.pdf`:
 
 ```shell
 user$ convert -density 300 latex.pdf -quality 100 latex.png
