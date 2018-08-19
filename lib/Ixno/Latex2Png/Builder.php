@@ -39,6 +39,7 @@ class Builder
 \\usepackage{amsfonts}
 \\usepackage{amssymb}
 \\usepackage{pst-plot}
+\\usepackage{physics}
 
 \\begin{document}
 \\pagestyle{empty}

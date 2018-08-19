@@ -110,7 +110,7 @@ TEMPLATE_POST;
 function showInformations($cacheFolder, $useCache, $resolution, $padding, $formula)
 {
     $templateUrl   = '%s?r=%d&p=%s&c=%d&f=%s';
-    $templateImage = '<img src="%s" width="%d">';
+    $templateImage = '<img src="%s" width="%d" alt="%s">';
 
     $templateInformation = <<<TEMPLATE_INFORMATION
 <style>
@@ -150,7 +150,8 @@ function showInformations($cacheFolder, $useCache, $resolution, $padding, $formu
     <thead>
         <tr><th>Name</th><th>Value</th></tr>
     </thead>
-    <tbody>
+    <tbody
+        <tr><td>Formula:</td><td>%s</td></tr>
         <tr><td>URL:</td><td>%s</td></tr>
         <tr><td>Image-Tag:</td><td>%s</td></tr>
         <tr><td>Preview:</td><td>%s</td></tr>
@@ -172,9 +173,9 @@ TEMPLATE_INFORMATION;
 
     $url     = sprintf($templateUrl, 'https://latex.ixno.de/', $resolution, $padding, $useCache ? '1' : '0', rawurlencode($formula));
     $urlLink = sprintf($templateUrl, '', $resolution, $padding, $useCache ? '1' : '0', rawurlencode($formula));
-    $image   = sprintf($templateImage, $url, $width);
+    $image   = sprintf($templateImage, $url, $width, $formula);
 
-    echo sprintf($templateInformation, $url, htmlspecialchars($image), $image, '<a href="'.$urlLink.'">Back</a>');
+    echo sprintf($templateInformation, $formula, $url, htmlspecialchars($image), $image, '<a href="'.$urlLink.'">Back</a>');
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
