@@ -37,7 +37,7 @@ The project requires at least all subsequent libraries:
 
 ### 2.1 Debian / Ubuntu
 
-Easy to install on Debian or Ubuntu:
+Easy to install on [Debian](https://de.wikipedia.org/wiki/Debian) or [Ubuntu](https://de.wikipedia.org/wiki/Ubuntu):
 
 ```shell
 user$ sudo apt install texlive-base biblatex texlive-latex-extra texlive-fonts-recommended
