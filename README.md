@@ -30,6 +30,8 @@ user$ composer dumpautoload -o
 
 ## 2. Requirements
 
+The project requires at least all subsequent libraries:
+
 * latex
 * imagemagick
 
