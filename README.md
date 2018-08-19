@@ -92,7 +92,7 @@ E = mc^{2}
 
 <img src="https://latex.ixno.de/?r=300&f=\sum_{i%20=%200}^{n}%20i%20=%20\frac{n(n%20%2B%201)}{2}" width="166" alt="\sum_{i = 0}^{n} i = \frac{n(n + 1)}{2}">
 
-### 4.3 Markov chain
+### 4.3 Markov decision process
 
 #### 4.3.1 Latex
 
