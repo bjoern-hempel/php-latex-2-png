@@ -40,6 +40,10 @@ user$ sudo apt install ImageMagick
 
 ## 3. Usage
 
+### 3.1 Browser
+
+If you need pictures directly to embed in your web projects:
+
 ```shell
 user$ vi index.php
 ```
@@ -82,6 +86,12 @@ $builder->sendPNGToBrowser($resolution, $padding);
 An image can now be created by requesting it in the browser:
 
 https://latex.ixno.de/?r=300&f=E%3Dmc^2
+
+### 3.2 Command Line
+
+If you need pictures directly in the command line:
+
+TODO..
 
 ## 4. Examples
 
