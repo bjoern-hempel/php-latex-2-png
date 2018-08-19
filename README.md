@@ -77,17 +77,17 @@ $builder->sendPNGToBrowser($resolution, $padding);
 
 ## 4. Examples
 
-### 4.1 Basic
+### 4.1 Mass–energy equivalence
 
 #### 4.1.1 Latex
 
 ```latex
-E = mc^{2}
+E = m \cdot c^2
 ```
 
 #### 4.1.2 Result
 
-<img src="https://latex.ixno.de/?r=300&f=E%20=%20mc^{2}" width="92" alt="E = mc^{2}">
+<img src="https://latex.ixno.de/?r=300&p=1pt&c=1&f=E%20%3D%20m%20%5Ccdot%20c%5E2" width="107" alt="E = m \cdot c^2">
 
 ### 4.2 Summation
 
