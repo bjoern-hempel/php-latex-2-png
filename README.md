@@ -42,7 +42,7 @@ user$ sudo apt install ImageMagick
 
 ### 3.1 Browser
 
-If you need pictures directly to embed in your web projects:
+If you need the pictures directly to embed in your web projects:
 
 ```shell
 user$ vi index.php
@@ -89,7 +89,7 @@ https://latex.ixno.de/?r=300&f=E%3Dmc^2
 
 ### 3.2 Command Line
 
-If you need pictures directly in the command line:
+If you need the pictures directly in the command line:
 
 TODO..
 
@@ -161,7 +161,17 @@ V^*(s) = \substack{\textbf{max}\\ {\tiny a}}\sum_{s'}^{} T(s, a, s')[R(s, a, s')
 
 <img src="https://latex.ixno.de/?r=300&p=1pt&c=1&f=%5Cmathrm%7Bi%7D%20%5Chbar%20%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial%20t%7D%20%5Cket%7B%5Cpsi%28t%2C%20%5Ctextbf%7Bx%7D%29%7D%20%3D%20%5Chat%7B%5Cmathcal%7BH%7D%7D%28%5Chat%7B%5Ctextbf%7Bx%7D%7D%2C%20%5Chat%7B%5Ctextbf%7Bp%7D%7D%29%20%5Cket%7B%5Cpsi%28t%2C%20%5Ctextbf%7Bx%7D%29%7D%20%5Chspace%7B0.5cm%7D%20%5CBigg%5Cvert%20%5Chspace%7B0.2cm%7D%20%5Chbar%20%3D%20%5Cfrac%7Bh%7D%7B2%5Cpi%7D%20%5Chspace%7B0.2cm%7D%20and%20%5Chspace%7B0.2cm%7D%20%5Chat%7B%5Cmathcal%7BH%7D%7D%28%5Chat%7B%5Ctextbf%7Bx%7D%7D%2C%20%5Chat%7B%5Ctextbf%7Bp%7D%7D%29%20%3D%20-%5Cfrac%7B%5Chat%7B%5Ctextbf%7Bp%7D%7D%5E2%7D%7B2m%7D%20%2B%20V%28%5Chat%7B%5Ctextbf%7Bx%7D%7D%29" width="697" alt="\mathrm{i} \hbar \frac{\partial}{\partial t} \ket{\psi(t, \textbf{x})} = \hat{\mathcal{H}}(\hat{\textbf{x}}, \hat{\textbf{p}}) \ket{\psi(t, \textbf{x})} \hspace{0.5cm} \Bigg\vert \hspace{0.2cm} \hbar = \frac{h}{2\pi} \hspace{0.2cm} and \hspace{0.2cm} \hat{\mathcal{H}}(\hat{\textbf{x}}, \hat{\textbf{p}}) = -\frac{\hat{\textbf{p}}^2}{2m} + V(\hat{\textbf{x}})">
 
-## Tools
+## 5. The way it works (The technique)
+
+If you don't like PHP and want to build your own framework:
+
+```shell
+user$ vi formula.tex
+```
+
+
+
+## 6. Tools
 
 * [Image-Template-Builder](https://latex.ixno.de/build.php)
 * [Online-Formula-Editor](http://www.hostmath.com/) 
