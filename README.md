@@ -204,6 +204,10 @@ Check the web server error files to locate the error (example):
 [Mon Aug 20 21:59:43.406786 2018] [:error] [pid 174] [client 172.17.0.1:33807] 87da0b0e7a03f691d5e4e2d2165b0.log.
 ```
 
+Or use the debug parameter (`d=1`):
+
+https://latex.ixno.de/?c=0&r=300&f=E%3Dm%C3%B6c^2&d=1
+
 ## 6. The way it works (the technique)
 
 If you don't like PHP and you want to build your own framework or you are just interested in how it works, you will find the following command line commands for creating images from tex files. This is the background of this library:
