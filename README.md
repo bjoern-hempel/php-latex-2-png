@@ -54,7 +54,7 @@ user$ sudo apt install ImageMagick
 
 ### 3.1 Browser
 
-If you need the pictures directly to embed in your web projects:
+If you need the pictures directly embed in your web projects:
 
 ```shell
 user$ vi index.php
@@ -106,7 +106,7 @@ https://latex.ixno.de/?r=300&f=E%3Dmc^2
 
 ### 3.2 Command Line
 
-If you need the pictures directly in the command line:
+If you need the pictures directly within the command line:
 
 TODO..
 
