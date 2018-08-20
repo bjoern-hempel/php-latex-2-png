@@ -69,17 +69,20 @@ LATEX_DOCUMENT;
 
     protected $useCache = true;
 
+    protected $debug = false;
+
     /**
      * The constructor of this builder class.
      *
      * @author  Bjoern Hempel <bjoern@hempel.li>
      * @version 1.0 (2018-08-14)
      */
-    public function __construct($cacheFolder, $latex, $useCache = true)
+    public function __construct($cacheFolder, $latex, $useCache = true, $debug = false)
     {
         $this->cacheFolder = $cacheFolder;
         $this->latex = $latex;
         $this->useCache = $useCache;
+        $this->debug = $debug;
     }
 
     public function getLatexDocument($padding = '1pt')
@@ -129,6 +132,13 @@ LATEX_DOCUMENT;
 
         /* an error occurred */
         if ($returnVar > 0) {
+            if ($this->debug) {
+                foreach ($output as $o) {
+                    echo $o.'<br />';
+                }
+                exit;
+            }
+
             foreach ($output as $o) {
                 error_log($o);
             }

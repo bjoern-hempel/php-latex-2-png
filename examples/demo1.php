@@ -35,9 +35,14 @@ $useCache    = true;
 $resolution  = 600;
 $padding     = '1pt';
 $formula     = '\sum_{i = 0}^{n} i = \frac{n(n + 1)}{2}';
+$debug       = false;
 
 if (array_key_exists('c', $_REQUEST)) {
     $useCache = $_REQUEST['c'] === '1' ? true : false;
+}
+
+if (array_key_exists('d', $_REQUEST)) {
+    $debug = $_REQUEST['d'] === '1' ? true : false;
 }
 
 if (array_key_exists('r', $_REQUEST)) {
@@ -52,7 +57,7 @@ if (array_key_exists('f', $_REQUEST)) {
     $formula = $_REQUEST['f'];
 }
 
-$builder = new Builder($cacheFolder, $formula, $useCache);
+$builder = new Builder($cacheFolder, $formula, $useCache, $debug);
 
 $builder->sendPNGToBrowser($resolution, $padding);
 
