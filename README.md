@@ -73,9 +73,14 @@ $useCache    = true;
 $resolution  = 600;
 $padding     = '1pt';
 $formula     = '\sum_{i = 0}^{n} i = \frac{n(n + 1)}{2}';
+$debug       = false;
 
 if (array_key_exists('c', $_REQUEST)) {
     $useCache = $_REQUEST['c'] === '1' ? true : false;
+}
+
+if (array_key_exists('d', $_REQUEST)) {
+    $debug = $_REQUEST['d'] === '1' ? true : false;
 }
 
 if (array_key_exists('r', $_REQUEST)) {
@@ -90,7 +95,7 @@ if (array_key_exists('f', $_REQUEST)) {
     $formula = $_REQUEST['f'];
 }
 
-$builder = new Builder($cacheFolder, $formula, $useCache);
+$builder = new Builder($cacheFolder, $formula, $useCache, $debug);
 
 $builder->sendPNGToBrowser($resolution, $padding);
 ```
@@ -175,7 +180,31 @@ V^*(s) = \substack{\textbf{max}\\ {\tiny a}}\sum_{s'}^{} T(s, a, s')[R(s, a, s')
 
 <img src="https://latex.ixno.de/?r=300&p=1pt&c=1&f=%5Cmathrm%7Bi%7D%20%5Chbar%20%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial%20t%7D%20%5Cket%7B%5Cpsi%28t%2C%20%5Ctextbf%7Bx%7D%29%7D%20%3D%20%5Chat%7B%5Cmathcal%7BH%7D%7D%28%5Chat%7B%5Ctextbf%7Bx%7D%7D%2C%20%5Chat%7B%5Ctextbf%7Bp%7D%7D%29%20%5Cket%7B%5Cpsi%28t%2C%20%5Ctextbf%7Bx%7D%29%7D%20%5Chspace%7B0.5cm%7D%20%5CBigg%5Cvert%20%5Chspace%7B0.2cm%7D%20%5Chbar%20%3D%20%5Cfrac%7Bh%7D%7B2%5Cpi%7D%20%5Chspace%7B0.2cm%7D%20and%20%5Chspace%7B0.2cm%7D%20%5Chat%7B%5Cmathcal%7BH%7D%7D%28%5Chat%7B%5Ctextbf%7Bx%7D%7D%2C%20%5Chat%7B%5Ctextbf%7Bp%7D%7D%29%20%3D%20-%5Cfrac%7B%5Chat%7B%5Ctextbf%7Bp%7D%7D%5E2%7D%7B2m%7D%20%2B%20V%28%5Chat%7B%5Ctextbf%7Bx%7D%7D%29" width="697" alt="\mathrm{i} \hbar \frac{\partial}{\partial t} \ket{\psi(t, \textbf{x})} = \hat{\mathcal{H}}(\hat{\textbf{x}}, \hat{\textbf{p}}) \ket{\psi(t, \textbf{x})} \hspace{0.5cm} \Bigg\vert \hspace{0.2cm} \hbar = \frac{h}{2\pi} \hspace{0.2cm} and \hspace{0.2cm} \hat{\mathcal{H}}(\hat{\textbf{x}}, \hat{\textbf{p}}) = -\frac{\hat{\textbf{p}}^2}{2m} + V(\hat{\textbf{x}})">
 
-## 5. The way it works (the technique)
+## 5. Check for errors
+
+If there is an error in the formula, you will get the following picture:
+
+<img src="https://latex.ixno.de/?r=300&p=1pt&c=1&f=Error%5C%2C%28see%5C%2Cerror.log%29" width="201" alt="Error\,(see\,error.log)">
+
+Check the web server error files to locate the error (example):
+
+```
+[Mon Aug 20 21:59:43.406729 2018] [:error] [pid 174] [client 172.17.0.1:33807] ) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+[Mon Aug 20 21:59:43.406734 2018] [:error] [pid 174] [client 172.17.0.1:33807] (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+[Mon Aug 20 21:59:43.406738 2018] [:error] [pid 174] [client 172.17.0.1:33807]
+[Mon Aug 20 21:59:43.406742 2018] [:error] [pid 174] [client 172.17.0.1:33807] LaTeX Warning: Command \\" invalid in math mode on input line 16.
+[Mon Aug 20 21:59:43.406747 2018] [:error] [pid 174] [client 172.17.0.1:33807]
+[Mon Aug 20 21:59:43.406751 2018] [:error] [pid 174] [client 172.17.0.1:33807] ! Please use \\mathaccent for accents in math mode.
+[Mon Aug 20 21:59:43.406756 2018] [:error] [pid 174] [client 172.17.0.1:33807] \\add@accent ...@spacefactor \\spacefactor }\\accent
+[Mon Aug 20 21:59:43.406761 2018] [:error] [pid 174] [client 172.17.0.1:33807]                                                   #1 #2\\egroup \\spacefactor ...
+[Mon Aug 20 21:59:43.406766 2018] [:error] [pid 174] [client 172.17.0.1:33807] l.16 E=m\xc3\xb6
+[Mon Aug 20 21:59:43.406771 2018] [:error] [pid 174] [client 172.17.0.1:33807]           c^2
+[Mon Aug 20 21:59:43.406776 2018] [:error] [pid 174] [client 172.17.0.1:33807] !  ==> Fatal error occurred, no output PDF file produced!
+[Mon Aug 20 21:59:43.406781 2018] [:error] [pid 174] [client 172.17.0.1:33807] Transcript written on /var/www/de/ixno/latex/php-latex-2-png/examples/cache/09f
+[Mon Aug 20 21:59:43.406786 2018] [:error] [pid 174] [client 172.17.0.1:33807] 87da0b0e7a03f691d5e4e2d2165b0.log.
+```
+
+## 6. The way it works (the technique)
 
 If you don't like PHP and you want to build your own framework or you are just interested in how it works, you will find the following command line commands for creating images from tex files. This is the background of this library:
 
@@ -215,7 +244,7 @@ user$ convert -density 300 latex.pdf -quality 100 latex.png
 
 That's it. Now enjoy your png file `latex.png`.
 
-## 6. Tools
+## 7. Tools
 
 * [Image-Template-Builder](https://latex.ixno.de/build.php)
 * [Online-Formula-Editor](http://www.hostmath.com/) 
