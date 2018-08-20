@@ -70,10 +70,10 @@ use Ixno\Latex2Png\Builder;
 /* Some configs */
 $cacheFolder = dirname(__FILE__).'/cache';
 $useCache    = true;
+$debug       = false;
 $resolution  = 600;
 $padding     = '1pt';
 $formula     = '\sum_{i = 0}^{n} i = \frac{n(n + 1)}{2}';
-$debug       = false;
 
 if (array_key_exists('c', $_REQUEST)) {
     $useCache = $_REQUEST['c'] === '1' ? true : false;
