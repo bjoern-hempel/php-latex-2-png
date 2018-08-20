@@ -59,7 +59,7 @@ LATEX_DOCUMENT;
 
     protected $templateLogFile = '%s/%s.log';
 
-    protected $templatePdfCommand = 'pdflatex -output-directory "%s" "%s" 1>/dev/null 2>&1';
+    protected $templatePdfCommand = 'pdflatex -halt-on-error -output-directory "%s" "%s" 2>&1';
 
     protected $templateConvertCommand = 'convert -density %d %s -quality 100 %s 1>/dev/null 2>&1';
 
@@ -123,7 +123,19 @@ LATEX_DOCUMENT;
         file_put_contents($texFile, $latexDocument);
 
         /* execute tex command (create pdf file) */
-        exec(sprintf($this->templatePdfCommand, $this->cacheFolder, $texFile));
+        $output = '';
+        $returnVar = 0;
+        exec(sprintf($this->templatePdfCommand, $this->cacheFolder, $texFile), $output, $returnVar);
+
+        /* an error occurred */
+        if ($returnVar > 0) {
+            foreach ($output as $o) {
+                error_log($o);
+            }
+
+            $this->latex = 'Error\,(see\,error.log)';
+            return $this->createPNG($outputResolution, $padding);
+        }
 
         /* execute convert command (create png file) */
         exec(sprintf($this->templateConvertCommand, $outputResolution, $pdfFile, $pngFile));
