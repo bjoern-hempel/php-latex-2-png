@@ -1,5 +1,7 @@
 # A Latex2Png library
 
+With this library it is possible to convert formulas into images:
+
 <img src="https://latex.ixno.de/?r=600&p=1pt&c=1&f=%5Cunderbrace%7BA%5C%2CLatex%5E2_%7BPng%7D%7D_%7Blibrary%7D" width="234" alt="\underbrace{A\,Latex^2_{Png}}_{library}">
 
 ## 1. Installation
