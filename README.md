@@ -246,7 +246,7 @@ Create the png image `latex.png` from `latex.pdf`:
 user$ convert -density 300 latex.pdf -quality 100 latex.png
 ```
 
-That's it. Now enjoy your png file `latex.png`.
+That's it. Enjoy!
 
 ## 7. Tools
 
