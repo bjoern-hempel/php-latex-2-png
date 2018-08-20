@@ -2,7 +2,7 @@
 
 With this library you can convert formulas into images. Feel free to use it directly on github.com or in your web projects:
 
-<div style="text-align:center"><img src="https://latex.ixno.de/?r=600&p=1pt&c=1&f=%5Cbegin%7Barray%7D%7Bc%7D%5C%5CA%5C%2C%5Cend%7Barray%7D%7B%5Cunderbrace%7BLatex%5E2_%7BPng%7D%7D_%7Blibrary%7D%7D" width="275" alt="\begin{array}{c}\\A\,\end{array}{\underbrace{Latex^2_{Png}}_{library}}"></div>
+<img src="https://latex.ixno.de/?r=600&p=1pt&c=1&f=%5Cbegin%7Barray%7D%7Bc%7D%5C%5CA%5C%2C%5Cend%7Barray%7D%7B%5Cunderbrace%7BLatex%5E2_%7BPng%7D%7D_%7Blibrary%7D%7D" width="275" alt="\begin{array}{c}\\A\,\end{array}{\underbrace{Latex^2_{Png}}_{library}}">
 
 ## 1. Installation
 
