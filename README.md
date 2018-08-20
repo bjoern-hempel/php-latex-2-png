@@ -204,7 +204,7 @@ Check the web server error files to locate the error (example):
 [Mon Aug 20 21:59:43.406786 2018] [:error] [pid 174] [client 172.17.0.1:33807] 87da0b0e7a03f691d5e4e2d2165b0.log.
 ```
 
-Or use the debug parameter (`d=1`):
+Or use the debug parameter (`d=1`) to see the log directly on screen:
 
 https://latex.ixno.de/?c=0&r=300&f=E%3Dm%C3%B6c^2&d=1
 
