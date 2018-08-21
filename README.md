@@ -189,6 +189,7 @@ If there is an error in the formula, you will get the following picture:
 Check the web server error files to locate the error (example):
 
 ```
+...
 [Mon Aug 20 21:59:43.406729 2018] [:error] [pid 174] [client 172.17.0.1:33807] ) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
 [Mon Aug 20 21:59:43.406734 2018] [:error] [pid 174] [client 172.17.0.1:33807] (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
 [Mon Aug 20 21:59:43.406738 2018] [:error] [pid 174] [client 172.17.0.1:33807]
