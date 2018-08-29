@@ -34,7 +34,7 @@ $cacheFolder = dirname(__FILE__).'/cache';
 $useCache    = true;
 $resolution  = 600;
 $padding     = '1pt';
-$formula     = '\sum_{i = 0}^{n} i = \frac{n(n + 1)}{2}';
+$formula     = '\\begin{array}{c}\\\\A\\,\\end{array}{\\underbrace{Latex^2_{Png}}_{library}}\\enspace\\enspace\\enspace';
 $debug       = false;
 
 if (array_key_exists('c', $_REQUEST)) {
