@@ -1,6 +1,6 @@
 # A Latex2Png library
 
-With this library you can convert formulas into images. Feel free to use it directly on github.com or in your web projects:
+With this library you can directly convert latex formulas into images. Feel free to use it directly on github.com or in your web projects:
 
 <img src="https://latex.ixno.de/?r=600&p=1pt&c=1&f=%5Cbegin%7Barray%7D%7Bc%7D%5C%5CA%5C%2C%5Cend%7Barray%7D%7B%5Cunderbrace%7BLatex%5E2_%7BPng%7D%7D_%7Blibrary%7D%7D" width="275" alt="\begin{array}{c}\\A\,\end{array}{\underbrace{Latex^2_{Png}}_{library}}">
 
@@ -32,7 +32,7 @@ user$ composer install
 user$ composer dumpautoload -o
 ```
 
-Now use `vendor/autoload.php` to include all libraries to your project.
+To include all needed libraries to your project you can use `vendor/autoload.php`.
 
 ## 2. Requirements
 
@@ -54,7 +54,7 @@ user$ sudo apt install ImageMagick
 
 ### 3.1 Browser
 
-If you need the pictures directly to embed in your web projects:
+If you need the pictures directly embed in your web projects:
 
 ```shell
 user$ vi index.php
@@ -70,10 +70,10 @@ use Ixno\Latex2Png\Builder;
 /* Some configs */
 $cacheFolder = dirname(__FILE__).'/cache';
 $useCache    = true;
+$debug       = false;
 $resolution  = 600;
 $padding     = '1pt';
 $formula     = '\sum_{i = 0}^{n} i = \frac{n(n + 1)}{2}';
-$debug       = false;
 
 if (array_key_exists('c', $_REQUEST)) {
     $useCache = $_REQUEST['c'] === '1' ? true : false;
@@ -106,7 +106,7 @@ https://latex.ixno.de/?r=300&f=E%3Dmc^2
 
 ### 3.2 Command Line
 
-If you need the pictures directly in the command line:
+If you need the pictures directly within the command line:
 
 TODO..
 
@@ -189,6 +189,7 @@ If there is an error in the formula, you will get the following picture:
 Check the web server error files to locate the error (example):
 
 ```
+...
 [Mon Aug 20 21:59:43.406729 2018] [:error] [pid 174] [client 172.17.0.1:33807] ) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
 [Mon Aug 20 21:59:43.406734 2018] [:error] [pid 174] [client 172.17.0.1:33807] (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
 [Mon Aug 20 21:59:43.406738 2018] [:error] [pid 174] [client 172.17.0.1:33807]
@@ -203,6 +204,10 @@ Check the web server error files to locate the error (example):
 [Mon Aug 20 21:59:43.406781 2018] [:error] [pid 174] [client 172.17.0.1:33807] Transcript written on /var/www/de/ixno/latex/php-latex-2-png/examples/cache/09f
 [Mon Aug 20 21:59:43.406786 2018] [:error] [pid 174] [client 172.17.0.1:33807] 87da0b0e7a03f691d5e4e2d2165b0.log.
 ```
+
+Or use the debug parameter (`d=1`) to see the log directly on screen:
+
+https://latex.ixno.de/?c=0&r=300&f=E%3Dm%C3%B6c^2&d=1
 
 ## 6. The way it works (the technique)
 
@@ -242,7 +247,7 @@ Create the png image `latex.png` from `latex.pdf`:
 user$ convert -density 300 latex.pdf -quality 100 latex.png
 ```
 
-That's it. Now enjoy your png file `latex.png`.
+That's it. Enjoy!
 
 ## 7. Tools
 
