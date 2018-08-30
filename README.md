@@ -254,6 +254,7 @@ That's it. Enjoy!
 * [Image-Template-Builder](https://latex.ixno.de/build.php)
 * [Online-Formula-Editor](http://www.hostmath.com/)
 * [TeX Mathmode](http://www.lsv.fr/~markey/LaTeX/doc/Mathmode.pdf)
+* [List of LaTeX symbols](http://latex.wikia.com/wiki/List_of_LaTeX_symbols)
 
 ## A. Authors
 
