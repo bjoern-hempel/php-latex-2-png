@@ -252,7 +252,8 @@ That's it. Enjoy!
 ## 7. Tools
 
 * [Image-Template-Builder](https://latex.ixno.de/build.php)
-* [Online-Formula-Editor](http://www.hostmath.com/) 
+* [Online-Formula-Editor](http://www.hostmath.com/)
+* [TeX Mathmode](http://www.lsv.fr/~markey/LaTeX/doc/Mathmode.pdf)
 
 ## A. Authors
 
