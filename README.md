@@ -212,6 +212,10 @@ Derivation from 4.6.3 and 4.6.4. For correspondence principle see [Correspondenc
 
 <img src="https://latex.ixno.de/?r=300&p=1pt&c=1&f=%5Cfrac%7Bp%5E2%7D%7B2m%7D%20%2B%20V%20%3D%20E" width="131" alt="\frac{p^2}{2m} + V = E">
 
+#### 4.6.7 Use correspondence principle
+
+<img src="https://latex.ixno.de/?r=300&p=1pt&c=1&f=-%5Cfrac%7B%5Chbar%5E2%20%5Cpartial_x%5E2%7D%7B2m%7D%2BV%20%3D%20%5Cmathrm%7Bi%7D%20%5Chbar%20%5Cpartial_t" width="179" alt="-\frac{\hbar^2 \partial_x^2}{2m}+V = \mathrm{i} \hbar \partial_t">
+
 ## 5. Check for errors
 
 If there is an error in the formula, you will get the following picture:
