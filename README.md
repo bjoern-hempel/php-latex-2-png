@@ -209,6 +209,8 @@ E^2=c^2p^2+m^2c^4 \,\, \xrightarrow{\text{m=0}} \,\, -(p^2 - \frac{1}{c^2}E^2)=0
 
 <img src="https://latex.ixno.de/?r=300&p=1pt&c=1&f=E%5E2%3Dc%5E2p%5E2%2Bm%5E2c%5E4%20%5C%2C%5C%2C%20%5Cxrightarrow%7B%5Ctext%7Bm%3D0%7D%7D%20%5C%2C%5C%2C%20-%28p%5E2%20-%20%5Cfrac%7B1%7D%7Bc%5E2%7DE%5E2%29%3D0" width="411" alt="E^2=c^2p^2+m^2c^4 \,\, \xrightarrow{\text{m=0}} \,\, -(p^2 - \frac{1}{c^2}E^2)=0">
 
+The transformation of the equation is now somewhat similar to the wave function and shows the relationship between the classical mechanics and the relativistic mechanics (correspondence principle).
+
 #### 4.6.5 Correspondence principle
 
 Derivation from 4.6.3 and 4.6.4. For correspondence principle see [Correspondence principle (Wikipedia)](https://en.wikipedia.org/wiki/Correspondence_principle)
