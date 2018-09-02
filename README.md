@@ -172,12 +172,12 @@ V^*(s) = \substack{\textbf{max}\\ {\tiny a}}\sum_{s'}^{} T(s, a, s')[R(s, a, s')
 \mathrm{i} \hbar \partial_t \ket{\psi_{(\textbf{x}, t)}} = \hat{\mathcal{H}}_{(\hat{\textbf{p}},
 \hat{\textbf{x}})} \ket{\psi_{(\textbf{x}, t)}} \hspace{0.5cm} \Bigg\vert \hspace{0.2cm}
 \hbar = \frac{h}{2\pi} \hspace{0.2cm} and \hspace{0.2cm} \hat{\mathcal{H}}_{(\hat{\textbf{p}},
-\hat{\textbf{x}})} = -\frac{\hat{\textbf{p}}^2}{2m} + V(\hat{\textbf{x}})
+\hat{\textbf{x}})} = -\frac{\hat{\textbf{p}}^2}{2m} + V_{(\hat{\textbf{x}})}
 ```
 
 #### 4.5.2 Result
 
-<img src="https://latex.ixno.de/?r=300&p=1pt&c=1&f=%5Cmathrm%7Bi%7D%20%5Chbar%20%5Cpartial_t%20%5Cket%7B%5Cpsi_%7B%28%5Ctextbf%7Bx%7D%2C%20t%29%7D%7D%20%3D%20%5Chat%7B%5Cmathcal%7BH%7D%7D_%7B%28%5Chat%7B%5Ctextbf%7Bp%7D%7D%2C%20%5Chat%7B%5Ctextbf%7Bx%7D%7D%29%7D%20%5Cket%7B%5Cpsi_%7B%28%5Ctextbf%7Bx%7D%2C%20t%29%7D%7D%20%5Chspace%7B0.5cm%7D%20%5CBigg%5Cvert%20%5Chspace%7B0.2cm%7D%20%5Chbar%20%3D%20%5Cfrac%7Bh%7D%7B2%5Cpi%7D%20%5Chspace%7B0.2cm%7D%20and%20%5Chspace%7B0.2cm%7D%20%5Chat%7B%5Cmathcal%7BH%7D%7D_%7B%28%5Chat%7B%5Ctextbf%7Bp%7D%7D%2C%20%5Chat%7B%5Ctextbf%7Bx%7D%7D%29%7D%20%3D%20-%5Cfrac%7B%5Chat%7B%5Ctextbf%7Bp%7D%7D%5E2%7D%7B2m%7D%20%2B%20V%28%5Chat%7B%5Ctextbf%7Bx%7D%7D%29" width="650" alt="\mathrm{i} \hbar \partial_t \ket{\psi_{(\textbf{x}, t)}} = \hat{\mathcal{H}}_{(\hat{\textbf{p}}, \hat{\textbf{x}})} \ket{\psi_{(\textbf{x}, t)}} \hspace{0.5cm} \Bigg\vert \hspace{0.2cm} \hbar = \frac{h}{2\pi} \hspace{0.2cm} and \hspace{0.2cm} \hat{\mathcal{H}}_{(\hat{\textbf{p}}, \hat{\textbf{x}})} = -\frac{\hat{\textbf{p}}^2}{2m} + V(\hat{\textbf{x}})">
+<img src="https://latex.ixno.de/?r=300&p=1pt&c=1&f=%5Cmathrm%7Bi%7D%20%5Chbar%20%5Cpartial_t%20%5Cket%7B%5Cpsi_%7B%28%5Ctextbf%7Bx%7D%2C%20t%29%7D%7D%20%3D%20%5Chat%7B%5Cmathcal%7BH%7D%7D_%7B%28%5Chat%7B%5Ctextbf%7Bp%7D%7D%2C%20%5Chat%7B%5Ctextbf%7Bx%7D%7D%29%7D%20%5Cket%7B%5Cpsi_%7B%28%5Ctextbf%7Bx%7D%2C%20t%29%7D%7D%20%5Chspace%7B0.5cm%7D%20%5CBigg%5Cvert%20%5Chspace%7B0.2cm%7D%20%5Chbar%20%3D%20%5Cfrac%7Bh%7D%7B2%5Cpi%7D%20%5Chspace%7B0.2cm%7D%20and%20%5Chspace%7B0.2cm%7D%20%5Chat%7B%5Cmathcal%7BH%7D%7D_%7B%28%5Chat%7B%5Ctextbf%7Bp%7D%7D%2C%20%5Chat%7B%5Ctextbf%7Bx%7D%7D%29%7D%20%3D%20-%5Cfrac%7B%5Chat%7B%5Ctextbf%7Bp%7D%7D%5E2%7D%7B2m%7D%20%2B%20V_%7B%28%5Chat%7B%5Ctextbf%7Bx%7D%7D%29%7D" width="640" alt="\mathrm{i} \hbar \partial_t \ket{\psi_{(\textbf{x}, t)}} = \hat{\mathcal{H}}_{(\hat{\textbf{p}}, \hat{\textbf{x}})} \ket{\psi_{(\textbf{x}, t)}} \hspace{0.5cm} \Bigg\vert \hspace{0.2cm} \hbar = \frac{h}{2\pi} \hspace{0.2cm} and \hspace{0.2cm} \hat{\mathcal{H}}_{(\hat{\textbf{p}}, \hat{\textbf{x}})} = -\frac{\hat{\textbf{p}}^2}{2m} + V_{(\hat{\textbf{x}})}">
 
 ### 4.6 Derivation of the time-dependent Schrödinger equation from wave mechanics
 
