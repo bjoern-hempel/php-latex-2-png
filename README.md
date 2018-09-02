@@ -193,11 +193,19 @@ See below
 
 See [Wave equation (Wikipedia)](https://en.wikipedia.org/wiki/Wave_equation)
 
+```latex
+(\partial_x^2-\frac{1}{c^2}\partial_t^2)\psi=0
+```
+
 <img src="https://latex.ixno.de/?r=300&p=1pt&c=1&f=%28%5Cpartial_x%5E2-%5Cfrac%7B1%7D%7Bc%5E2%7D%5Cpartial_t%5E2%29%5Cpsi%3D0" width="171" alt="(\partial_x^2-\frac{1}{c^2}\partial_t^2)\psi=0">
 
 #### 4.6.4 Relativistic law of conservation of energy
 
 Particles are considered to be massless (m = 0). For relativistic law of conservation of energy see [Wikipedia (german)](https://de.wikipedia.org/wiki/Energieerhaltungssatz#Energieerhaltungssatz_in_der_Relativit%C3%A4tstheorie)
+
+```latex
+E^2=c^2p^2+m^2c^4 \,\, \xrightarrow{\text{m=0}} \,\, -(p^2 - \frac{1}{c^2}E^2)=0
+```
 
 <img src="https://latex.ixno.de/?r=300&p=1pt&c=1&f=E%5E2%3Dc%5E2p%5E2%2Bm%5E2c%5E4%20%5C%2C%5C%2C%20%5Cxrightarrow%7B%5Ctext%7Bm%3D0%7D%7D%20%5C%2C%5C%2C%20-%28p%5E2%20-%20%5Cfrac%7B1%7D%7Bc%5E2%7DE%5E2%29%3D0" width="411" alt="E^2=c^2p^2+m^2c^4 \,\, \xrightarrow{\text{m=0}} \,\, -(p^2 - \frac{1}{c^2}E^2)=0">
 
@@ -205,15 +213,35 @@ Particles are considered to be massless (m = 0). For relativistic law of conserv
 
 Derivation from 4.6.3 and 4.6.4. For correspondence principle see [Correspondence principle (Wikipedia)](https://en.wikipedia.org/wiki/Correspondence_principle)
 
+```latex
+\begin{aligned} p {}\longrightarrow{} & \frac{1}{\mathrm{i}} \hbar
+\partial_x \\ E {}\longrightarrow{} & \mathrm{i} \hbar \partial_t \\
+\mathrm{i}^2 {}\longrightarrow{} & -1 \end{aligned}
+```
+
 <img src="https://latex.ixno.de/?r=300&p=1pt&c=1&f=%5Cbegin%7Baligned%7D%0D%0Ap%20%7B%7D%5Clongrightarrow%7B%7D%20%26%20%5Cfrac%7B1%7D%7B%5Cmathrm%7Bi%7D%7D%20%5Chbar%20%5Cpartial_x%20%5C%5C%0D%0AE%20%7B%7D%5Clongrightarrow%7B%7D%20%26%20%5Cmathrm%7Bi%7D%20%5Chbar%20%5Cpartial_t%20%5C%5C%0D%0A%5Cmathrm%7Bi%7D%5E2%20%7B%7D%5Clongrightarrow%7B%7D%20%26%20-1%0D%0A%5Cend%7Baligned%7D" width="124" alt="\begin{aligned} p {}\longrightarrow{} & \frac{1}{\mathrm{i}} \hbar \partial_x \\ E {}\longrightarrow{} & \mathrm{i} \hbar \partial_t \\ \mathrm{i}^2 {}\longrightarrow{} & -1 \end{aligned}">
 
 #### 4.6.6 Total energy
+
+```latex
+\frac{p^2}{2m} + V = E
+```
 
 <img src="https://latex.ixno.de/?r=300&p=1pt&c=1&f=%5Cfrac%7Bp%5E2%7D%7B2m%7D%20%2B%20V%20%3D%20E" width="131" alt="\frac{p^2}{2m} + V = E">
 
 #### 4.6.7 Use correspondence principle
 
+```latex
+-\frac{\hbar^2 \partial_x^2}{2m}+V = \mathrm{i} \hbar \partial_t \hspace{0.5cm}
+\Bigg\vert \hspace{0.2cm} \cdot \psi_{(x,t)}
+```
+
 <img src="https://latex.ixno.de/?r=300&p=1pt&c=1&f=-%5Cfrac%7B%5Chbar%5E2%20%5Cpartial_x%5E2%7D%7B2m%7D%2BV%20%3D%20%5Cmathrm%7Bi%7D%20%5Chbar%20%5Cpartial_t%20%5Chspace%7B0.5cm%7D%0D%0A%5CBigg%5Cvert%20%5Chspace%7B0.2cm%7D%20%5Ccdot%20%5Cpsi_%7B%28x%2Ct%29%7D" width="290" alt="-\frac{\hbar^2 \partial_x^2}{2m}+V = \mathrm{i} \hbar \partial_t \hspace{0.5cm} \Bigg\vert \hspace{0.2cm} \cdot \psi_{(x,t)}">
+
+```latex
+-\frac{\hbar^2 \partial_x^2}{2m} \psi_{(x,t)}+V \psi_{(x,t)} = \mathrm{i}
+\hbar \partial_t \psi_{(x,t)}
+```
 
 <img src="https://latex.ixno.de/?r=300&p=1pt&c=1&f=-%5Cfrac%7B%5Chbar%5E2%20%5Cpartial_x%5E2%7D%7B2m%7D%20%5Cpsi_%7B%28x%2Ct%29%7D%2BV%20%5Cpsi_%7B%28x%2Ct%29%7D%20%3D%20%5Cmathrm%7Bi%7D%20%5Chbar%20%5Cpartial_t%20%5Cpsi_%7B%28x%2Ct%29%7D" width="323" alt="-\frac{\hbar^2 \partial_x^2}{2m} \psi_{(x,t)}+V \psi_{(x,t)} = \mathrm{i} \hbar \partial_t \psi_{(x,t)}">
 
