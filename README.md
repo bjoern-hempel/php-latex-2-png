@@ -200,11 +200,11 @@ See [Wave equation (Wikipedia)](https://en.wikipedia.org/wiki/Wave_equation)
 
 <img src="https://latex.ixno.de/?r=300&p=1pt&c=1&f=E%5E2%3Dc%5E2p%5E2%2Bm%5E2c%5E4%20%5C%2C%5C%2C%20%5Cxrightarrow%7B%5Ctext%7Bm%3D0%7D%7D%20%5C%2C%5C%2C%20%5Cfrac%7B1%7D%7Bc%5E2%7DE%5E2-p%5E2%3D0" width="379" alt="E^2=c^2p^2+m^2c^4 \,\, \xrightarrow{\text{m=0}} \,\, \frac{1}{c^2}E^2-p^2=0">
 
-#### 4.6.5 
+#### 4.6.5 Correspondence principle
 
-See [Correspondence principle (Wikipedia)](https://en.wikipedia.org/wiki/Correspondence_principle)
+Derivation from 4.6.3 and 4.6.4. For correspondence principle see [Correspondence principle (Wikipedia)](https://en.wikipedia.org/wiki/Correspondence_principle)
 
-
+<img src="https://latex.ixno.de/?r=300&p=1pt&c=1&f=%5Cbegin%7Baligned%7D%0D%0Ap%20%7B%7D%5Clongrightarrow%7B%7D%20%26%20%5Cfrac%7B1%7D%7B%5Cmathrm%7Bi%7D%7D%20%5Chbar%20%5Cpartial_x%20%5C%5C%0D%0AE%20%7B%7D%5Clongrightarrow%7B%7D%20%26%20%5Cmathrm%7Bi%7D%20%5Chbar%20%5Cpartial_t%20%5C%5C%0D%0A%5Cmathrm%7Bi%7D%5E2%20%7B%7D%5Clongrightarrow%7B%7D%20%26%20-1%0D%0A%5Cend%7Baligned%7D" width="124" alt="\begin{aligned} p {}\longrightarrow{} & \frac{1}{\mathrm{i}} \hbar \partial_x \\ E {}\longrightarrow{} & \mathrm{i} \hbar \partial_t \\ \mathrm{i}^2 {}\longrightarrow{} & -1 \end{aligned}">
 
 ## 5. Check for errors
 
