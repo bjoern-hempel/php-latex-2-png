@@ -247,6 +247,8 @@ Derivation from 4.6.3 and 4.6.4. For correspondence principle see [Correspondenc
 
 <img src="https://latex.ixno.de/?r=300&p=1pt&c=1&f=-%5Cfrac%7B%5Chbar%5E2%20%5Cpartial_x%5E2%7D%7B2m%7D%20%5Cpsi_%7B%28x%2Ct%29%7D%2BV%20%5Cpsi_%7B%28x%2Ct%29%7D%20%3D%20%5Cmathrm%7Bi%7D%20%5Chbar%20%5Cpartial_t%20%5Cpsi_%7B%28x%2Ct%29%7D" width="323" alt="-\frac{\hbar^2 \partial_x^2}{2m} \psi_{(x,t)}+V \psi_{(x,t)} = \mathrm{i} \hbar \partial_t \psi_{(x,t)}">
 
+Now we have the time-dependent Schrödinger equation. :)
+
 ## 5. Check for errors
 
 If there is an error in the formula, you will get the following picture:
