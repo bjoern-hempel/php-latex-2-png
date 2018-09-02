@@ -223,6 +223,8 @@ Derivation from 4.6.3 and 4.6.4. For correspondence principle see [Correspondenc
 
 <img src="https://latex.ixno.de/?r=300&p=1pt&c=1&f=%5Cbegin%7Baligned%7D%0D%0Ap%20%7B%7D%5Clongrightarrow%7B%7D%20%26%20%5Cfrac%7B1%7D%7B%5Cmathrm%7Bi%7D%7D%20%5Chbar%20%5Cpartial_x%20%5C%5C%0D%0AE%20%7B%7D%5Clongrightarrow%7B%7D%20%26%20%5Cmathrm%7Bi%7D%20%5Chbar%20%5Cpartial_t%20%5C%5C%0D%0A%5Cmathrm%7Bi%7D%5E2%20%7B%7D%5Clongrightarrow%7B%7D%20%26%20-1%0D%0A%5Cend%7Baligned%7D" width="124" alt="\begin{aligned} p {}\longrightarrow{} & \frac{1}{\mathrm{i}} \hbar \partial_x \\ E {}\longrightarrow{} & \mathrm{i} \hbar \partial_t \\ \mathrm{i}^2 {}\longrightarrow{} & -1 \end{aligned}">
 
+If we put this relationship into the relativistic energy equation, we get the classical wave equation.
+
 #### 4.6.6 Total energy
 
 ```latex
