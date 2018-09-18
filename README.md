@@ -152,7 +152,7 @@ and \hspace{0.2cm} \dot x(t) = \frac{\text{d}}{\text{d}t}x(t)
 <img src="https://latex.ixno.de/?r=300&p=1pt&c=1&f=%5Cddot%20x%28t%29%20%2B2%20%5Cdelta%20%5Ccdot%20%5Cdot%20x%28t%29%20%2B%20%5Comega_0%5E2%20%5Ccdot%20x%28t%29%20%3D%200%20%5Chspace%7B0.5cm%7D%20%5CBigg%5Cvert%20%5Chspace%7B0.2cm%7D%0D%0A%5Cdelta%3D%5Cfrac%7Bd%7D%7B2m%7D%20%5Chspace%7B0.2cm%7D%20and%20%5Chspace%7B0.2cm%7D%20%5Comega_0%3D%5Csqrt%7B%5Cfrac%7Bk%7D%7Bm%7D%7D%20%5Chspace%7B0.2cm%7D%20and%20%5Chspace%7B0.2cm%7D%20%5Cddot%20x%28t%29%20%3D%20%5Cfrac%7B%5Ctext%7Bd%7D%5E2%7D%7B%5Ctext%7Bd%7Dt%5E2%7Dx%28t%29%20%5Chspace%7B0.2cm%7D%20and%20%5Chspace%7B0.2cm%7D%20%5Cdot%20x%28t%29%20%3D%20%5Cfrac%7B%5Ctext%7Bd%7D%7D%7B%5Ctext%7Bd%7Dt%7Dx%28t%29" width="921" alt="\ddot x(t) +2 \delta \cdot \dot x(t) + \omega_0^2 \cdot x(t) = 0 \hspace{0.5cm} \Bigg\vert \hspace{0.2cm} \delta=\frac{d}{2m} \hspace{0.2cm} and \hspace{0.2cm} \omega_0=\sqrt{\frac{k}{m}} \hspace{0.2cm} and \hspace{0.2cm} \ddot x(t) = \frac{\text{d}^2}{\text{d}t^2}x(t) \hspace{0.2cm} and \hspace{0.2cm} \dot x(t) = \frac{\text{d}}{\text{d}t}x(t)">
 
 
-### 4.4 Markov decision process
+### 4.4 Bellman equation
 
 #### 4.4.1 Latex
 
