@@ -157,7 +157,8 @@ and \hspace{0.2cm} \dot x(t) = \frac{\text{d}}{\text{d}t}x(t)
 #### 4.4.1 Latex
 
 ```latex
-V^*(s) = \substack{\textbf{max}\\ {\tiny a}}\sum_{s'}^{} T(s, a, s')[R(s, a, s') + \gamma \cdot V^*(s')] \quad \forall s
+V^*(s) = \substack{\textbf{max}\\ {\tiny a}}\sum_{s'}^{} T(s, a, s')[R(s, a, s') + \gamma \cdot V^*(s')]
+\quad \forall s
 ```
 
 #### 4.4.2 Result
