@@ -50,6 +50,8 @@ user$ sudo apt install texlive-base biblatex texlive-latex-extra texlive-fonts-r
 user$ sudo apt install ImageMagick
 ```
 
+And of course also on other systems. ;) See the documentation of the corresponding system.
+
 ## 3. Usage
 
 ### 3.1 Browser
