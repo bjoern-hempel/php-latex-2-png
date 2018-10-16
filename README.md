@@ -287,12 +287,14 @@ e^{\mathrm{i}\cdot\pi} = {\underbrace{cos(\pi)}_{=-1}} + {\underbrace{\mathrm{i}
 #### 4.9.1 Latex
 
 ```latex
-
+{\underbrace{\sum_{n=1}^\infty {1 \over n^s}}_{Riemannsche \hspace{0.1cm} Zeta-Funktion}}
+= {\underbrace{\prod_p {1 \over {1 - {1 \over {p^s}}}}}_{p \in \mathbb{P} \hspace{0.2cm}
+\wedge \hspace{0.2cm} s \hspace{0.1cm} > \hspace{0.1cm} 1}}
 ```
 
 #### 4.9.2 Result
 
-
+<img src="https://latex.ixno.de/?r=300&p=1pt&c=1&f=%7B%5Cunderbrace%7B%5Csum_%7Bn%3D1%7D%5E%5Cinfty%20%7B1%20%5Cover%20n%5Es%7D%7D_%7BRiemannsche%20%5Chspace%7B0.1cm%7D%20Zeta-Funktion%7D%7D%20%3D%20%7B%5Cunderbrace%7B%5Cprod_p%20%7B1%20%5Cover%20%7B1%20-%20%7B1%20%5Cover%20%7Bp%5Es%7D%7D%7D%7D%7D_%7Bp%20%5Cin%20%5Cmathbb%7BP%7D%20%5Chspace%7B0.2cm%7D%20%5Cwedge%20%5Chspace%7B0.2cm%7D%20s%20%5Chspace%7B0.1cm%7D%20%3E%20%5Chspace%7B0.1cm%7D%201%7D%7D" width="373" alt="{\underbrace{\sum_{n=1}^\infty {1 \over n^s}}_{Riemannsche \hspace{0.1cm} Zeta-Funktion}} = {\underbrace{\prod_p {1 \over {1 - {1 \over {p^s}}}}}_{p \in \mathbb{P} \hspace{0.2cm} \wedge \hspace{0.2cm} s \hspace{0.1cm} > \hspace{0.1cm} 1}}">
 
 ## 5. Check for errors
 
