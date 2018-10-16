@@ -274,12 +274,12 @@ Now we have the time-dependent Schrödinger equation.
 #### 4.8.1 Latex
 
 ```latex
-
+e^{\mathrm{i}\cdot\pi} + 1 = 0
 ```
 
 #### 4.8.2 Result
 
-
+<img src="https://latex.ixno.de/?r=300&p=1pt&c=1&f=e%5E%7B%5Cmathrm%7Bi%7D%5Ccdot%5Cpi%7D%20%2B%201%20%3D%200" width="115" alt="e^{\mathrm{i}\cdot\pi} + 1 = 0">
 
 ## 5. Check for errors
 
