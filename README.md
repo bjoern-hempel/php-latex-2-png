@@ -275,12 +275,12 @@ Now we have the time-dependent Schrödinger equation.
 
 ```latex
 e^{\mathrm{i}\cdot\pi} + 1 = 0 \hspace{0.5cm} \Bigg\vert \hspace{0.2cm}
-e^{\mathrm{i}\cdot\pi} = cos(x) + \mathrm{i} \cdot sin(x)
+e^{\mathrm{i}\cdot\pi} = {\underbrace{cos(\pi)}_{=-1}} + {\underbrace{\mathrm{i} \cdot sin(\pi)}_{=0}}
 ```
 
 #### 4.8.2 Result
 
-<img src="https://latex.ixno.de/?r=300&p=1pt&c=1&f=e%5E%7B%5Cmathrm%7Bi%7D%5Ccdot%5Cpi%7D%20%2B%201%20%3D%200%20%5Chspace%7B0.5cm%7D%20%5CBigg%5Cvert%0D%0A%5Chspace%7B0.2cm%7D%20e%5E%7B%5Cmathrm%7Bi%7D%5Ccdot%5Cpi%7D%20%3D%20cos%28x%29%20%2B%20%5Cmathrm%7Bi%7D%20%5Ccdot%20sin%28x%29" width="382" alt="e^{\mathrm{i}\cdot\pi} + 1 = 0 \hspace{0.5cm} \Bigg\vert \hspace{0.2cm} e^{\mathrm{i}\cdot\pi} = cos(x) + \mathrm{i} \cdot sin(x)">
+<img src="https://latex.ixno.de/?r=300&p=1pt&c=1&f=e%5E%7B%5Cmathrm%7Bi%7D%5Ccdot%5Cpi%7D%20%2B%201%20%3D%200%20%5Chspace%7B0.5cm%7D%20%5CBigg%5Cvert%0D%0A%5Chspace%7B0.2cm%7D%20e%5E%7B%5Cmathrm%7Bi%7D%5Ccdot%5Cpi%7D%20%3D%20%7B%5Cunderbrace%7Bcos%28%5Cpi%29%7D_%7B%3D-1%7D%7D%20%2B%20%7B%5Cunderbrace%7B%5Cmathrm%7Bi%7D%20%5Ccdot%20sin%28%5Cpi%29%7D_%7B%3D0%7D%7D" width="383" alt="e^{\mathrm{i}\cdot\pi} + 1 = 0 \hspace{0.5cm} \Bigg\vert \hspace{0.2cm} e^{\mathrm{i}\cdot\pi} = {\underbrace{cos(\pi)}_{=-1}} + {\underbrace{\mathrm{i} \cdot sin(\pi)}_{=0}}">
 
 ## 5. Check for errors
 
