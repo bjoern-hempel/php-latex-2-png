@@ -256,6 +256,19 @@ The total amount of energy is the sum of the kinetic energy and the potential en
 
 Now we have the time-dependent Schrödinger equation.
 
+
+### 4.7 Gaussian error integral
+
+#### 4.7.1 Latex
+
+```latex
+\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}
+```
+
+#### 4.7.2 Result
+
+<img src="https://latex.ixno.de/?r=300&p=1pt&c=1&f=%5Cint_%7B-%5Cinfty%7D%5E%7B%5Cinfty%7D%20e%5E%7B-x%5E2%7D%20dx%20%3D%20%5Csqrt%7B%5Cpi%7D" width="178" alt="\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}">
+
 ## 5. Check for errors
 
 If there is an error in the formula, you will get the following picture:
