@@ -274,12 +274,13 @@ Now we have the time-dependent Schrödinger equation.
 #### 4.8.1 Latex
 
 ```latex
-e^{\mathrm{i}\cdot\pi} + 1 = 0
+e^{\mathrm{i}\cdot\pi} + 1 = 0 \hspace{0.5cm} \Bigg\vert \hspace{0.2cm}
+e^{\mathrm{i}\cdot\pi} = cos(x) + \mathrm{i} \cdot sin(x)
 ```
 
 #### 4.8.2 Result
 
-<img src="https://latex.ixno.de/?r=300&p=1pt&c=1&f=e%5E%7B%5Cmathrm%7Bi%7D%5Ccdot%5Cpi%7D%20%2B%201%20%3D%200" width="115" alt="e^{\mathrm{i}\cdot\pi} + 1 = 0">
+<img src="https://latex.ixno.de/?r=300&p=1pt&c=1&f=e%5E%7B%5Cmathrm%7Bi%7D%5Ccdot%5Cpi%7D%20%2B%201%20%3D%200%20%5Chspace%7B0.5cm%7D%20%5CBigg%5Cvert%0D%0A%5Chspace%7B0.2cm%7D%20e%5E%7B%5Cmathrm%7Bi%7D%5Ccdot%5Cpi%7D%20%3D%20cos%28x%29%20%2B%20%5Cmathrm%7Bi%7D%20%5Ccdot%20sin%28x%29" width="382" alt="e^{\mathrm{i}\cdot\pi} + 1 = 0 \hspace{0.5cm} \Bigg\vert \hspace{0.2cm} e^{\mathrm{i}\cdot\pi} = cos(x) + \mathrm{i} \cdot sin(x)">
 
 ## 5. Check for errors
 
