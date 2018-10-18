@@ -110,7 +110,7 @@ https://latex.ixno.de/?r=300&f=E%3Dmc^2
 
 If you need the pictures directly within the command line:
 
-TODO..
+TODO.. (add a cli example)
 
 ## 4. Examples
 
